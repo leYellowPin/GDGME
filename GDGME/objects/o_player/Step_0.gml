@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description main
 
 
 vsp = clamp(vsp, -max_grav*Gmodifier, max_grav*Gmodifier);

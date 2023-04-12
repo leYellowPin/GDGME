@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description set up some variables
+
 p_ = false;
 
-audio_play_sound(mainTrack, 1, 0);
+if mainTrack != undefined{ audio_play_sound(mainTrack, 1, 0); }

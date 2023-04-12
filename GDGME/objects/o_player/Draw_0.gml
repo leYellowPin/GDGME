@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description draw the player
+//don't ask why there's so much code, it just works :)
 
 var angleMod = 90*sideway*movedir;
 var angleMul = 1.25;
