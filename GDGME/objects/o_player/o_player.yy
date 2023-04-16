@@ -37,6 +37,9 @@
     "name": "s_hitbox",
     "path": "sprites/s_hitbox/s_hitbox.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "s_hitbox",
+    "path": "sprites/s_hitbox/s_hitbox.yy",
+  },
   "visible": true,
 }

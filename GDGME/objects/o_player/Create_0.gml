@@ -17,8 +17,8 @@ _solid = o_solid;
 p_angle = 0;
 angleDr = 0;
 gamemode = "cube";
-cube_sprite = s_cube_01;
-ship_sprite = s_ship_01;
+cube_sprite = 2;
+ship_sprite = 0;
 
 spr_origin = {
 	cubeX : 32,

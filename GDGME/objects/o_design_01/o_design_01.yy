@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_solid",
+  "name": "o_design_01",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -9,7 +9,10 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_solid",
+    "path": "objects/o_solid/o_solid.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,12 +29,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_hitbox",
-    "path": "sprites/s_hitbox/s_hitbox.yy",
+    "name": "s_design_01",
+    "path": "sprites/s_design_01/s_design_01.yy",
   },
   "spriteMaskId": {
     "name": "s_hitbox",
     "path": "sprites/s_hitbox/s_hitbox.yy",
   },
-  "visible": false,
+  "visible": true,
 }
