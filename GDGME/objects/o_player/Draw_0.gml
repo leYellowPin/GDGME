@@ -3,7 +3,7 @@
 
 var angleMod = 90*sideway*movedir;
 var angleMul = 1.25;
-angleDr = lerp(angleDr, p_angle, .5);
+angleDr = p_angle;//lerp(angleDr, p_angle, .5);
 
 switch(gamemode){
  case "cube":
@@ -12,7 +12,7 @@ switch(gamemode){
 	
 	if !sideway{
 			if !place_meeting(x, y+gravdir, _solid) and !global.pause{
-			   p_angle += spd/2*gravdir*movedir;
+			   p_angle += spd/1.5*gravdir*movedir;
 			}
 			if place_meeting(x, y+gravdir, _solid) and !global.pause{
 			    p_angle = player_resetAngle(p_angle);
@@ -24,7 +24,7 @@ switch(gamemode){
 
 	}else{
 			if !place_meeting(x+gravdir, y, _solid) and !global.pause{
-			   p_angle += spd/2*gravdir*movedir;
+			   p_angle += spd/1.5*gravdir*movedir;
 			}
 			if place_meeting(x+gravdir, y, _solid) and !global.pause{
 			    p_angle = player_resetAngle(p_angle);
