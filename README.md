@@ -5,4 +5,4 @@ A Geometry Dash RECREATION project in GameMaker (GameMaker Studio 2)
 - Download the project file.
 - Open the project in GameMaker (2023.2.x to newer versions).
 
-# ENGINE INSTRUCTIONS ARE IN 'NOTES.MD'
+# ENGINE INSTRUCTIONS are in 'INSTRUCTIONS.md'
