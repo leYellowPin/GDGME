@@ -13,11 +13,11 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
-    {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
-    {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Cube","order":6,"path":"folders/Sprites/Cube.yy",},
     {"name":"Ship","order":7,"path":"folders/Sprites/Ship.yy",},
     {"name":"Triggers","order":8,"path":"folders/Sprites/Triggers.yy",},
+    {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
+    {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"s_hitbox","order":3,"path":"sprites/s_hitbox/s_hitbox.yy",},
