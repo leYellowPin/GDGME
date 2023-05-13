@@ -80,7 +80,8 @@ switch(gamemode){
 	
 	
 	if !global.pause{
-		p_angle = -vsp;
+		var _m = 1.5;
+		p_angle = -vsp*_m;
 	}
 	
 	
