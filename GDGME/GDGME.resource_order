@@ -18,10 +18,12 @@
     {"name":"Triggers","order":8,"path":"folders/Sprites/Triggers.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Backgrounds","order":9,"path":"folders/Sprites/Backgrounds.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"s_hitbox","order":3,"path":"sprites/s_hitbox/s_hitbox.yy",},
     {"name":"o_design_01","order":4,"path":"objects/o_design_01/o_design_01.yy",},
+    {"name":"misc","order":3,"path":"scripts/misc/misc.yy",},
     {"name":"o_solid","order":1,"path":"objects/o_solid/o_solid.yy",},
     {"name":"trig_direction","order":5,"path":"objects/trig_direction/trig_direction.yy",},
     {"name":"cube_controls","order":1,"path":"scripts/cube_controls/cube_controls.yy",},
