@@ -2,7 +2,7 @@
 //don't ask why there's so much code, it just works :)
 
 var angleMod = 90*sideway*movedir;
-var angleMul = 1.25;
+var angleMul = 1.6;
 angleDr = p_angle;//lerp(angleDr, p_angle, .5);
 
 switch(gamemode){
@@ -11,24 +11,17 @@ switch(gamemode){
 	sprite_set_offset(s_cube_sec, spr_origin.cubeX, spr_origin.cubeY);
 	
 	if !sideway{
-			if !place_meeting(x, y+gravdir, _solid) and !global.pause{
-			   p_angle += spd/1.5*gravdir*movedir;
-			}
-			if place_meeting(x, y+gravdir, _solid) and !global.pause{
-			    p_angle = player_resetAngle(p_angle);
-			}
+			
+			player_angle_control();
+			
 			//p1
 			draw_sprite_ext(s_cube_pri, cube_sprite, x, y, p_xscale, p_yscale, angleDr*-1+angleMod, c_white, 1);
 			//p2
 			draw_sprite_ext(s_cube_sec, cube_sprite, x, y, p_xscale, p_yscale, angleDr*-1+angleMod, c_white, 1);
 
 	}else{
-			if !place_meeting(x+gravdir, y, _solid) and !global.pause{
-			   p_angle += spd/1.5*gravdir*movedir;
-			}
-			if place_meeting(x+gravdir, y, _solid) and !global.pause{
-			    p_angle = player_resetAngle(p_angle);
-			}
+			
+			player_angle_control();
 			//p1
 			draw_sprite_ext(s_cube_pri, cube_sprite, x, y, p_xscale, p_yscale, angleDr+angleMod, c_white, 1);
 			//p2
@@ -80,8 +73,7 @@ switch(gamemode){
 	
 	
 	if !global.pause{
-		var _m = 1.5;
-		p_angle = -vsp*_m;
+		p_angle = -vsp;
 	}
 	
 	
