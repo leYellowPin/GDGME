@@ -30,4 +30,4 @@ The trigger's Image Yscale defines the playey's GRAVITY DIRECTION (changing o_pl
 ![image](https://user-images.githubusercontent.com/70369681/232309661-6330509c-958a-4340-8a38-b152cdba55c4.png)
 
 
-IMPORTANT: Only rotate the trigger CLOCKWISE (no negative numbers)
+IMPORTANT: Only rotate the trigger CLOCKWISE (no negative numbers) and the values can only be: 0, 90, 180, 270.
