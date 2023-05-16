@@ -4,7 +4,7 @@ Features:
 - all gamemodes (2/8).
 - assets sorting (texture pages).
 - triggers (1/many).
-- pausing the game - audio sync based on playtime.
+- basic pause game system + audio sync based on playtime.
 
 Todo:
 - hazards.
