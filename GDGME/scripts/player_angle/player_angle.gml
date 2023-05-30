@@ -3,13 +3,11 @@
 function player_angle_control(){
 	
 	if !sideway{
-		if !place_meeting(x,y+2*gravdir,_solid){
-		    p_angle += 4.75*gravdir*movedir;//4;//change those if room speed changed
+		if !place_meeting(x,y+5*gravdir,_solid) and !global.pause{
+		    p_angle += 4.75;//4;//change those if room speed changed
 		}
-		if p_angle > 450{
-		    p_angle = 50;//50;//this too
-		}
-		if place_meeting(x,y+2*gravdir,_solid){
+		
+		if place_meeting(x,y+5*gravdir,_solid){
 		    if p_angle < 450 and p_angle > 270{
 		        player_resetAngle(360);
 		    }else if p_angle < 360 and p_angle > 180{
@@ -21,13 +19,11 @@ function player_angle_control(){
 		    }
 		}
 	}else{
-		if !place_meeting(x+2*gravdir,y,_solid){
-		    p_angle += 4.75*gravdir*movedir;//4;//change those if room speed changed
+		if !place_meeting(x+5*gravdir,y,_solid) and !global.pause{
+		    p_angle += 4.75;//4;//change those if room speed changed
 		}
-		if p_angle > 450{
-		    p_angle = 50;//50;//this too
-		}
-		if place_meeting(x+2*gravdir,y,_solid){
+		
+		if place_meeting(x+5*gravdir,y,_solid){
 		    if p_angle < 450 and p_angle > 270{
 		        player_resetAngle(360);
 		    }else if p_angle < 360 and p_angle > 180{
@@ -41,20 +37,20 @@ function player_angle_control(){
 	}
 		
 	
-	if p_angle >= 360{
+	if p_angle >= 360 or p_angle <= -360{
 	    p_angle = 0;
 	}	
 }
 
 function player_resetAngle(_r){
+	
 	if p_angle > _r{
 	    p_angle -= 24;
-	    if p_angle <= _r
-	    {
+	    if p_angle <= _r{
 	        p_angle = _r;
 	    }
 	}
-else if p_angle < _r {
+else if p_angle < _r{
 	    p_angle += 24;
 	    if p_angle >= _r{
 	        p_angle = _r;
