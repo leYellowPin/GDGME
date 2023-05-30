@@ -21,8 +21,8 @@ cube_sprite = 2;
 ship_sprite = 0;
 
 spr_origin = {
-	cubeX : 32,
-	cubeY : 32,
+	cubeX : 30,
+	cubeY : 30,
 	shipX : 37,
 	shipY : 23
 };

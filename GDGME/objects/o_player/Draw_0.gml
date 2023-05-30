@@ -1,12 +1,14 @@
 /// @description draw the player
 //don't ask why there's so much code, it just works :)
 
-var angleMod = 90*sideway*movedir;
-var angleMul = 1.6;
-angleDr = p_angle;//lerp(angleDr, p_angle, .5);
+var angleMod = 90*sideway;
+var angleMul = 1.6;//lerp(angleDr, p_angle, .5);
 
 switch(gamemode){
  case "cube":
+ 
+	angleDr = p_angle*movedir*gravdir;
+ 
 	sprite_set_offset(s_cube_pri, spr_origin.cubeX, spr_origin.cubeY);
 	sprite_set_offset(s_cube_sec, spr_origin.cubeX, spr_origin.cubeY);
 	
@@ -32,40 +34,43 @@ switch(gamemode){
 	cube_controls();
  break;
  case "ship":
+ 
+	angleDr = p_angle*movedir;
+	
 	if !sideway{
 	//small cube
 		//p1
 	/*new offset*/sprite_set_offset(s_cube_pri, spr_origin.cubeX, spr_origin.cubeY+(25));
-	draw_sprite_ext(s_cube_pri, cube_sprite, x, y, image_xscale*.75*movedir, image_yscale*.75*gravdir, (angleDr*angleMul*movedir)+(angleMod), c_white, 1);
+	draw_sprite_ext(s_cube_pri, cube_sprite, x, y, image_xscale*.75*movedir, image_yscale*.75*gravdir, (angleDr*angleMul)+(angleMod), c_white, 1);
 		//p2
 	/*new offset*/sprite_set_offset(s_cube_sec, spr_origin.cubeX, spr_origin.cubeY+(25));
-	draw_sprite_ext(s_cube_sec, cube_sprite, x, y, image_xscale*.75*movedir, image_yscale*.75*gravdir, (angleDr*angleMul*movedir)+(angleMod), c_white, 1);
+	draw_sprite_ext(s_cube_sec, cube_sprite, x, y, image_xscale*.75*movedir, image_yscale*.75*gravdir, (angleDr*angleMul)+(angleMod), c_white, 1);
 	
 	//ship
 	sprite_set_offset(s_ship_pri, spr_origin.shipX, spr_origin.shipY);
 	sprite_set_offset(s_ship_sec, spr_origin.shipX, spr_origin.shipY);
 		//p1
-	draw_sprite_ext(s_ship_pri, ship_sprite, x, y, image_xscale*1.25*movedir, image_yscale*1.25*gravdir, (angleDr*angleMul*movedir)+(angleMod), c_white, 1);
+	draw_sprite_ext(s_ship_pri, ship_sprite, x, y, image_xscale*1.25*movedir, image_yscale*1.25*gravdir, (angleDr*angleMul)+(angleMod), c_white, 1);
 		//p2
-	draw_sprite_ext(s_ship_sec, ship_sprite, x, y, image_xscale*1.25*movedir, image_yscale*1.25*gravdir, (angleDr*angleMul*movedir)+(angleMod), c_white, 1);
+	draw_sprite_ext(s_ship_sec, ship_sprite, x, y, image_xscale*1.25*movedir, image_yscale*1.25*gravdir, (angleDr*angleMul)+(angleMod), c_white, 1);
 		//outline
 	
 	}else if sideway{
 	//small cube
 		//p1
 	/*new offset*/sprite_set_offset(s_cube_pri, spr_origin.cubeX, spr_origin.cubeY+(25));
-	draw_sprite_ext(s_cube_pri, cube_sprite, x, y, image_xscale*.75, image_yscale*.75*-gravdir*movedir, (angleDr*angleMul*-movedir)-(angleMod), c_white, 1);
+	draw_sprite_ext(s_cube_pri, cube_sprite, x, y, image_xscale*.75*-movedir, image_yscale*.75*gravdir, (-angleDr*angleMul)+(angleMod), c_white, 1);
 		//p2
 	/*new offset*/sprite_set_offset(s_cube_sec, spr_origin.cubeX, spr_origin.cubeY+(25));
-	draw_sprite_ext(s_cube_sec, cube_sprite, x, y, image_xscale*.75, image_yscale*.75*-gravdir*movedir, (angleDr*angleMul*-movedir)-(angleMod), c_white, 1);
+	draw_sprite_ext(s_cube_sec, cube_sprite, x, y, image_xscale*.75*-movedir, image_yscale*.75*gravdir, (-angleDr*angleMul)+(angleMod), c_white, 1);
 	
 	//ship
 	sprite_set_offset(s_ship_pri, spr_origin.shipX, spr_origin.shipY);
 	sprite_set_offset(s_ship_sec, spr_origin.shipX, spr_origin.shipY);
 		//p1
-	draw_sprite_ext(s_ship_pri, ship_sprite, x, y, image_xscale*1.25, image_yscale*1.25*-gravdir*movedir, (angleDr*angleMul*-movedir)-(angleMod), c_white, 1);
+	draw_sprite_ext(s_ship_pri, ship_sprite, x, y, image_xscale*1.25*-movedir, image_yscale*1.25*gravdir, (-angleDr*angleMul)+(angleMod), c_white, 1);
 		//p2
-	draw_sprite_ext(s_ship_sec, ship_sprite, x, y, image_xscale*1.25, image_yscale*1.25*-gravdir*movedir, (angleDr*angleMul*-movedir)-(angleMod), c_white, 1);
+	draw_sprite_ext(s_ship_sec, ship_sprite, x, y, image_xscale*1.25*-movedir, image_yscale*1.25*gravdir, (-angleDr*angleMul)+(angleMod), c_white, 1);
 		//outline
 	
 	}
