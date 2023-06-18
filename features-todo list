@@ -6,6 +6,15 @@ Features:
 - triggers (1/many).
 - basic pause game system + audio sync based on playtime.
 
+In works:
+- Sorted resource order. (done)
+- Velocity clamping. (done)
+- Basic in-game editor. (50%)
+- Basic main menu. (not done)
+- Levels save & load. (done)
+- Smooth ship rotation. (done)
+- Ball gamemode. (not done)
+
 Todo:
 - hazards.
 - simple particles and death effect.
@@ -14,6 +23,5 @@ Todo:
 - orbs.
 - pads.
 - portals. 
-- ball gamemode.
 - scrolling background.
 - ground & ceiling system.
