@@ -10,10 +10,10 @@ In works:
 - Sorted resource order. (done)
 - Velocity clamping. (done)
 - Basic in-game editor. (50%)
-- Basic main menu. (not done)
+- Basic main menu. (done)
 - Levels save & load. (done)
 - Smooth ship rotation. (done)
-- Ball gamemode. (not done)
+- Ball gamemode. (done)
 
 Todo:
 - hazards.
