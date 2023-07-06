@@ -11,6 +11,8 @@ Press the pencil button and write your soundtrack's asset name in (default is 'u
 ![image](https://user-images.githubusercontent.com/70369681/231461020-8ed00f70-132b-4bb5-a252-748ec93afb81.png)
 ![image](https://user-images.githubusercontent.com/70369681/231461126-1fd15d76-20d2-4ee1-997d-bb4b9d1db1d0.png)
 
+You can add a track while playing (.ogg files only) by pressing Up arrow, press Down arrow to set it as the main track.
+
 
 # > DIRECTION TRIGGER (ARROW TRIGGER)
 
@@ -31,3 +33,30 @@ The trigger's Image Yscale defines the playey's GRAVITY DIRECTION (changing o_pl
 
 
 IMPORTANT: Only rotate the trigger CLOCKWISE (no negative numbers) and the values can only be: 0, 90, 180, 270.
+
+
+
+# > PLATFORMER MODE
+
+- Enable & Disable platformer mode by changing global.playmode to 1 - 0 (platformer - auto-scroller).
+
+# > IN-GAME EDITOR
+
+- Enable & Disable in-game editor by changing global.editor to true - false.
+- Press Enter to open the editor if it is enabled.
+- Editor keybinds:
+  + Numpad 0, 1, 2: switch Edit mode. (Build, Edit, Delete)
+  + Numpad 3: switch object types (solid - non-solid - portal).
+  + Shift + Scroll: change gridsize.
+  + Scroll: zoom in-out.
+  + Hold Middle-click: move the view.
+  + Delete: Delete selected objects.
+  + Editmode 0 + Left-click: place objects.
+  + Editmode 1 + W,A,S,D: move selected objects by gridsize (default is 62 pixels).
+  + Editmode 1 + Shift + W,A,S,D: move selected objects by gridsize divided by 15.5 (default is 4 pixels).
+  + Editmode 1 + Left-click: select objects.
+  + Editmode 1 + Hold Left-click: Enable swipe mode, select objects in a field.
+  + Editmode 1 + Q or E: rotate selected objects clockwise(E) or counter-clockwise(Q) by 45 degrees.
+  + Editmode 2 + Left-click: delete objects in the mouse pointer.
+  + Ctrl + S: save level.
+  + Ctrl + L: load level.
