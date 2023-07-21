@@ -42,6 +42,8 @@ IMPORTANT: Only rotate the trigger CLOCKWISE (no negative numbers) and the value
 
 # > IN-GAME EDITOR
 
+NOTE: There may be keybinds that wasn't listed.
+
 - Enable & Disable in-game editor by changing global.editor to true - false.
 - Press Enter to open the editor if it is enabled.
 - Editor keybinds:
