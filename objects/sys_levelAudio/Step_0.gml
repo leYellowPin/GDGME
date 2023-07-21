@@ -26,20 +26,25 @@ if mainTrack != undefined and sys_levelManager.mode != 0{
 }
 
 
+/*
 if keyboard_check_pressed(vk_down){
 	mainTrack = trackList[0];
 }
+*/
 
 if keyboard_check_pressed(vk_up){
 	var _trackName = get_open_filename_ext("track|*.ogg", "", working_directory, "Add an audio track");
 
 	if _trackName != ""{
+		/*
 		for(var i = 0; i<10; i++){
 			if trackList[i] == 0{
 				trackList[i] = audio_create_stream(_trackName);
 				break;
 			}
 		}
+		*/
+		mainTrack = audio_create_stream(_trackName);
 		//var _snd = audio_create_stream(_trackName);
 		//audio_play_sound(_snd, 1, 0);
 	}

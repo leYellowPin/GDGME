@@ -12,6 +12,7 @@
     {"name":"Scripts","order":4,"path":"folders/Scripts.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sys_debugUI","order":3,"path":"objects/sys_debugUI/sys_debugUI.yy",},
     {"name":"lvl_fm","order":4,"path":"scripts/lvl_fm/lvl_fm.yy",},
     {"name":"editor_related","order":6,"path":"scripts/editor_related/editor_related.yy",},
     {"name":"s_grndLine","order":11,"path":"sprites/s_grndLine/s_grndLine.yy",},

@@ -12,6 +12,7 @@
     {"name":"inst_B430DD8","path":"rooms/rm_level/rm_level.yy",},
     {"name":"inst_45D2EE68","path":"rooms/rm_level/rm_level.yy",},
     {"name":"inst_39006A37","path":"rooms/rm_level/rm_level.yy",},
+    {"name":"inst_4249C296","path":"rooms/rm_level/rm_level.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -21,6 +22,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B430DD8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"sys_levelManager","path":"objects/sys_levelManager/sys_levelManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":799.0,"y":95.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_45D2EE68","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_view","path":"objects/o_view/o_view.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":775.0,"y":93.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39006A37","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"sys_levelEditorUI","path":"objects/sys_levelEditorUI/sys_levelEditorUI.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":868.0,"y":93.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4249C296","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"sys_debugUI","path":"objects/sys_debugUI/sys_debugUI.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":744.0,"y":93.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"trigger","depth":100,"effectEnabled":true,"effectType":null,"gridX":31,"gridY":31,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"particle","assets":[],"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

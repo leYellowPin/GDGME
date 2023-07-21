@@ -31,6 +31,7 @@
   },
   "resources": [
     {"id":{"name":"s_trig_direction","path":"sprites/s_trig_direction/s_trig_direction.yy",},},
+    {"id":{"name":"sys_debugUI","path":"objects/sys_debugUI/sys_debugUI.yy",},},
     {"id":{"name":"lvl_fm","path":"scripts/lvl_fm/lvl_fm.yy",},},
     {"id":{"name":"editor_related","path":"scripts/editor_related/editor_related.yy",},},
     {"id":{"name":"s_grndLine","path":"sprites/s_grndLine/s_grndLine.yy",},},
