@@ -17,7 +17,7 @@ var _y = y-_oy;
 if mlimit == global.mlimit {
 	if point_in_rectangle(_mx, _my, _x, _y, _x+_width, _y+_height){
 		if device_mouse_check_button(0, mb_left){
-			if second_tex {selected = 1;}
+			selected = 1;
 			scale = scale_max;
 		}
 		if device_mouse_check_button_released(0, mb_left){
@@ -38,7 +38,7 @@ if mlimit == global.mlimit {
 					}
 				break;
 			}
-			if second_tex {selected = 0;}
+			selected = 0;
 			scale = scale_min;
 		}
 	}else{
@@ -53,5 +53,5 @@ if mlimit == global.mlimit {
 
 scaleDr = lerp(scaleDr, scale, .25);
 
-draw_sprite_ext(sprite_index, image_index+selected, x, y, scaleDr, scaleDr, angle, c_white, opacity);
+draw_sprite_ext(sprite_index, image_index, x, y, scaleDr, scaleDr, angle, c_white, opacity);
 draw_sprite_ext(overlay_tex, overlay_index, x, y, scaleDr, scaleDr, angle, c_white, opacity*overlay);

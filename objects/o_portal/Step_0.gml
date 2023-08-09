@@ -48,6 +48,7 @@ if instance_number(o_player) > 0{
 				break;
 				case 1:
 					if o_player.gravdir != -1{
+						particle_ring = instance_create_layer(x, y, "player", sys_particle);
 						with particle_ring{
 							p_shape = pt_shape_circle;
 
@@ -87,6 +88,7 @@ if instance_number(o_player) > 0{
 				break;
 				case 2:
 					if o_player.gamemode != "cube"{
+						particle_ring = instance_create_layer(x, y, "player", sys_particle);
 						with particle_ring{
 							p_shape = pt_shape_circle;
 
@@ -127,6 +129,7 @@ if instance_number(o_player) > 0{
 				break;
 				case 3:
 					if o_player.gamemode != "ship"{
+						particle_ring = instance_create_layer(x, y, "player", sys_particle);
 						with particle_ring{
 							p_shape = pt_shape_circle;
 
@@ -167,6 +170,7 @@ if instance_number(o_player) > 0{
 				break;
 				case 4:
 					if o_player.gamemode != "ball"{
+						particle_ring = instance_create_layer(x, y, "player", sys_particle);
 						with particle_ring{
 							p_shape = pt_shape_circle;
 

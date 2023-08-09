@@ -72,20 +72,23 @@ function object_move(_btnType){
 	}
 }
 
-function create_btn(s_index, i_index, _layer, xpos, ypos, second_texture, max_scale, i_angle, btn_mlimit, btn_drawtype, output_mode, _script, _scriptArg, _room, _overlay, o_index){
+function create_btn(s_index, i_index, _layer, xpos, ypos, max_scale, i_angle, btn_mlimit, btn_drawtype, _script, _scriptArg, _room, _overlay, o_index){
 	var _btn = instance_create_layer(xpos, ypos, _layer, o_button) 
 	with _btn{
 		sprite_index = s_index;
 		image_index = i_index;
 		angle = i_angle;
-		second_tex = second_texture;
 		overlay = _overlay;
 		overlay_tex = s_index;
 		overlay_index = o_index;
-		output = output_mode;
-		output_script = _script;
-		scrArray = _scriptArg;
-		rm_to = _room;
+
+		output = "noone";
+		
+		if _script != 0 and _script != undefined
+		{output_script = _script; output = "execute script"; scrArray = _scriptArg;}
+		else if _room != 0 and _room != undefined
+		{rm_to = _room; output = "room";}
+		
 		mlimit = btn_mlimit;
 		scale_max = max_scale;
 		mode = btn_drawtype;
@@ -110,6 +113,21 @@ function manage_btn(){
 	_btnMove2left.opacity = editor_ui;
 	_btnMove2right.opacity = editor_ui;
 	_btnMove2up.opacity = editor_ui;
+	
+	with _btnBuild{
+		if sys_levelManager.edit_mode == 0 {image_index = 1;}
+		else {image_index = 0;}
+	}
+	with _btnEdit{
+		if sys_levelManager.edit_mode == 1 {image_index = 3;}
+		else {image_index = 2;}
+	}
+	with _btnDelete{
+		if sys_levelManager.edit_mode == 2 {image_index = 5;}	
+		else {image_index = 4;}
+	}
+	
+	
 	
 	instance_deactivate_object(o_button);
 

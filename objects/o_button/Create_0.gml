@@ -10,9 +10,6 @@ scale_max = 1.5;
 
 image_speed = 0;
 
-// (optional) secondary texture when selected
-
-second_tex = 0;
 selected = 0;
 
 // (optional) secondary overlay texture
